@@ -199,37 +199,12 @@ onMounted(() => {
 </template>
 
 <style lang="scss">
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
-}
-
-#app {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
 .app-container {
   display: flex;
   flex-direction: column;
-  width: 95%;
-  max-width: 1400px;
-  margin: 20px auto;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  height: 100vh;
   padding: 20px;
+  background-color: #f5f5f5;
   color: #333;
 }
 
@@ -248,7 +223,7 @@ html, body {
   display: flex;
   flex: 1;
   gap: 20px;
-  min-height: 600px;
+  height: calc(100vh - 100px);
 }
 
 .column {
