@@ -1,6 +1,46 @@
-# test
+# Тестовое приложение
 
-This template should help get you started developing with Vue 3 in Vite.
+## Разработка
+
+```bash
+# Установка зависимостей
+npm install
+
+# Запуск сервера разработки
+npm run dev
+
+# Сборка для продакшена
+npm run build
+
+# Проверка линтером
+npm run lint
+```
+
+## Развертывание на GitHub Pages
+
+1. Убедитесь, что у вас есть репозиторий на GitHub
+2. Настройте GitHub Pages в настройках репозитория:
+   - Перейдите в Settings > Pages
+   - В разделе "Source" выберите "GitHub Actions"
+3. При пуше в ветку `main` будет автоматически запускаться процесс деплоя
+4. После успешного деплоя приложение будет доступно по адресу: `https://<username>.github.io/test/`
+
+## Структура проекта
+
+```
+├── public/          # Статические файлы
+├── src/            # Исходный код
+│   ├── assets/     # Ресурсы (изображения, стили)
+│   ├── components/ # Vue компоненты
+│   ├── views/      # Страницы приложения
+│   ├── router/     # Маршрутизация
+│   ├── store/      # Хранилище данных
+│   ├── App.vue     # Корневой компонент
+│   └── main.js     # Точка входа
+├── .github/        # GitHub Actions конфигурация
+├── index.html      # HTML шаблон
+└── vite.config.js  # Конфигурация Vite
+```
 
 ## Recommended IDE Setup
 
@@ -9,27 +49,3 @@ This template should help get you started developing with Vue 3 in Vite.
 ## Customize configuration
 
 See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
