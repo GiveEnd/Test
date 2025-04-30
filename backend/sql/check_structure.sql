@@ -1,1 +1,0 @@
-SELECT sql FROM sqlite_master WHERE type='table' AND name IN ('groups', 'nodes', 'interfaces', 'applications', 'metrics', 'statuses'); 
