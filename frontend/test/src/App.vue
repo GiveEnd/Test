@@ -199,6 +199,13 @@ onMounted(() => {
 </template>
 
 <style lang="scss">
+#app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
 .app-container {
   display: flex;
   flex-direction: column;
@@ -206,6 +213,8 @@ onMounted(() => {
   padding: 20px;
   background-color: #f5f5f5;
   color: #333;
+  max-width: 1400px;
+  width: 100%;
 }
 
 .status-bar {
@@ -340,7 +349,7 @@ onMounted(() => {
     color: #2c3e50;
     margin-bottom: 10px;
     font-weight: 600;
-  }
+}
 }
 
 .metric-values {
@@ -362,7 +371,7 @@ onMounted(() => {
     border-color: #ff9800;
     background-color: #fff3e0;
     font-weight: 600;
-  }
+}
 
   &.critical {
     color: #c62828;
@@ -379,7 +388,7 @@ onMounted(() => {
     border-bottom: 1px solid #eee;
     color: #2c3e50;
     font-weight: 600;
-  }
+}
 }
 
 .interface-item, .app-item {
@@ -387,7 +396,7 @@ onMounted(() => {
   border-radius: 4px;
   background-color: #f8f8f8;
   margin-bottom: 8px;
-  display: flex;
+    display: flex;
   justify-content: space-between;
   align-items: center;
 
@@ -409,7 +418,7 @@ onMounted(() => {
     &.up {
       background-color: #e8f5e9;
       color: #2e7d32;
-    }
+  }
 
     &.down {
       background-color: #ffebee;
@@ -419,7 +428,7 @@ onMounted(() => {
     &.warning {
       background-color: #fff3e0;
       color: #ef6c00;
-    }
+  }
 
     &.unknown {
       background-color: #f5f5f5;
@@ -429,14 +438,14 @@ onMounted(() => {
 }
 
 .no-selection {
-  display: flex;
+    display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
   color: #78909c;
   font-style: italic;
   font-weight: 500;
-}
+  }
 
 .admin-info {
   margin-top: 20px;

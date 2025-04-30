@@ -1,4 +1,4 @@
-SELECT 
+SELECT
     m.id as metric_id,
     m.datetime as metric_timestamp,
     m.cpu_utilization as cpu_value,

@@ -1,4 +1,4 @@
-SELECT 
+SELECT
     g.id as group_id,
     g.caption as group_name,
     n.id as node_id,
